@@ -1,0 +1,13 @@
+on late-init
+    chown root root /sys/class/qcom-haptics/primitive_duration
+    chmod 0600 /sys/class/qcom-haptics/primitive_duration
+    write /sys/class/leds/vibrator/trigger "transient"
+
+service vendor.qti.vibrator /vendor/bin/hw/vendor.qti.hardware.vibrator.service
+    class hal
+    user root
+    group root input audio
+    onrestart restart vibratorfeature
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib64/hw:/system/lib64:/sbin
+    disabled
+    seclabel u:r:recovery:s0
