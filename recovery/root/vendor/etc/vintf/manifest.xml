@@ -43,15 +43,9 @@
         </interface>
         <fqname>@2.4::ICameraProvider/external/0</fqname>
     </hal>
-    <hal format="hidl">
+        <hal format="aidl">
         <name>android.hardware.gatekeeper</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IGatekeeper</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IGatekeeper/default</fqname>
+        <fqname>IGatekeeper/default</fqname>
     </hal>
     <hal format="hidl">
         <name>android.hardware.media.omx</name>
@@ -345,16 +339,6 @@
             <instance>qccvndhal</instance>
         </interface>
         <fqname>@1.0::IQccvndhal/qccvndhal</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.qti.hardware.qseecom</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IQSEECom</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IQSEECom/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.internal.deviceinfo</name>
