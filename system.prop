@@ -11,6 +11,3 @@ ro.charger.enable_suspend=1
 
 # Reset allocatable space
 ro.dynamic.full_size=9663676416
-
-# Screen touch mapping
-vendor.screen.touch_mapping=1
