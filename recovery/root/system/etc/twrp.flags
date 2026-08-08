@@ -31,9 +31,6 @@
 /modem_img             emmc    /dev/block/bootdevice/by-name/modem                                flags=backup=1;display="Modem_image";slotselect;flashimg=1
 /logfs                 vfat    /dev/block/bootdevice/by-name/logfs                                flags=display="Logfs"
 
-# Removable storage
-/usb_otg               auto    /dev/block/sdg1                            /dev/block/sdg          flags=fsflags=utf8;display="USB-OTG";storage;wipeingui;removable
-
 /super                 emmc    /dev/block/bootdevice/by-name/super                                flags=backup=1;display="Super";flashimg=1
 
 # Logical partitions
